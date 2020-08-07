@@ -42,7 +42,7 @@ inline void qtVersion(bool sorting)
             data[c] = std::rand() % 256;
         }
         if (sorting) {
-            qSort(data.begin(), data.end());
+            //qSort(data.begin(), data.end());
         }
         long long sum = 0;
         for (unsigned i = 0; i < 100000; i++) {
