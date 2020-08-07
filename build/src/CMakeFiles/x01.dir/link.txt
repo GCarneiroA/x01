@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/x01.dir/x01.cpp.o -o x01  /usr/lib/libQt5Core.so.5.15.0 

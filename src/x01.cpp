@@ -2,7 +2,6 @@
 #include <algorithm>
 #include <ctime>
 #include <iostream>
-#include <QList>
 #include <QtAlgorithms>
 
 const unsigned arraySize = 32768;
@@ -38,9 +37,9 @@ inline void qtVersion(bool sorting)
 {
     clock_t start_time = clock();
     {
-        QList<int> data;
+        int data[arraySize];
         for (unsigned c = 0; c < arraySize; c++) {
-            data.append(std::rand() % 256);
+            data[c] = std::rand() % 256;
         }
         if (sorting) {
             qSort(data.begin(), data.end());
